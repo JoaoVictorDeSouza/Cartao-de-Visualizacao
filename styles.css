@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display&display=swap');
+
+:root{
+    --cor-de-fundo: #00432e;
+    --cor-do-conteudo: #69ab50;
+    --cor-do-botao: #84cc95;
+    --cor-rodape: #0f5935;
+
+    --fonte-primaria: 'Playfair Display', serif;
+    --fonte-secudaria: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #00432e;
+    margin: 0;
+}
+
+.principal{
+    display: flex;
+    margin: 5% 25%;
+    height: 500px;
+    background-color: #69ab50;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.imagem{
+    width: 50%;
+}
+
+.informacao{
+    padding: 2rem;
+    font-family: var(--fonte-secudaria);
+}
+
+.valor{
+    font-family: var(--fonte-primaria);
+}
+
+.valor__real{
+    font-size: 40px;
+}
+
+.valor__antigo{
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.botao{
+    margin: 20% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-do-botao);
+    border: none;
+    border-radius: 16px;
+    height: 40px;
+    display: flex;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.carrinho{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.rodape{
+    background-color: var(--cor-rodape);
+    font-family: var(--fonte-secudaria);
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 1047){
+    .informacao{
+        display: flex;
+        gap: 10px;
+        padding: 1rem;
+    }
+}
